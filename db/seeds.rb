@@ -36,3 +36,5 @@ puts "Les gossips sont ok"
   tag = Tag.create(title: Faker::Book.title)
 end
 
+pm = PrivateMessage.create(content: Faker::GameOfThrones.quote, sender_id: User.all.sample.id, recipient: User.all.sample.id)
+
